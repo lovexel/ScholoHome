@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(240, 240, 211);
+    
+}
+
+.interest-content{
+    height: 500px;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 50px;
+    box-shadow: 0px 15px 15px 0.17px rgba(0, 0, 0, 0.3);
+}
+
+.list-choose{
+    height: 450px;
+    width: 600px;
+    padding: 20px;
+    background-color: rgb(244, 245, 240);
+    border-radius: 10px;
+}
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+ul.tags {
+    list-style: none;
+    padding: 5px;
+  }
+  
+ul.tags li label {
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(56, 55, 55, 0.3);
+    color: #adadad;
+    border-radius: 40px;
+    margin: 5px;
+    transition: all .2s;
+    height: 50px;
+    width: 200px;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+ul.tags li input[type="checkbox"]:checked + label {
+    border: 1px solid rgb(17, 130, 175);
+    background-color: rgb(17, 130, 175);
+    color: #fff;
+    transition: all .2s; }
+  
+ul.tags li input[type="checkbox"] {
+    display: absolute;
+    position: absolute;
+    opacity: 0; }
